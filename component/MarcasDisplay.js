@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function MarcasDisplay() {
 	return (
-		<Carousel slides='4' width='230px' margin='25px' height='98px'>
+		<Carousel slides='4' width='210px' margin='25px' height='98px'>
 			<div className='carousel__item'>
 				<img src='/static/marcas/Adidas-1280x720.jpg' width='100%' height='100%' alt='' />
 			</div>

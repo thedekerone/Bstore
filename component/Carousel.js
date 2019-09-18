@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
-import { useDrag } from 'react-use-gesture';
+import { useDrag, useScroll } from 'react-use-gesture';
 
 export default function Carousel(props) {
 	var margin = parseInt(props.margin, 10);
@@ -18,19 +18,22 @@ export default function Carousel(props) {
 	}));
 
 	const bind = useDrag(({ down, local, velocity, direction }) => {
-		console.log(width);
+		console.log(direction);
 		set({
 			xy : down
-				? local
+				? [
+						local[0],
+						0
+					]
 				: [
-						Math.round(local[0] / (margin + width)) * (margin + width),
+						Math.round(local[0] / (margin + width) + 0.3 * direction[0]) * (margin + width),
 						0
 					]
 		});
 
 		if (!down) {
-			local[0] = Math.round(local[0] / (margin + width)) * (margin + width);
-			if (local[0] > 0 || (!window.matchMedia('(max-width:950px)').matches && slides < 5)) {
+			local[0] = Math.round(local[0] / (margin + width) + 0.3 * direction[0]) * (margin + width);
+			if (local[0] > 0 || (!window.matchMedia('(max-width:1150px)').matches && slides < 5)) {
 				local[0] = 0;
 				set({
 					xy : [
@@ -39,8 +42,11 @@ export default function Carousel(props) {
 					]
 				});
 			} else if (window.matchMedia('(max-width:950px)').matches) {
+				console.log('da');
 				if (local[0] < window.innerWidth - (width * slides + margin * (slides - 1))) {
-					local[0] = window.innerWidth - (width * slides + margin * (slides - 1));
+					local[0] = window.innerWidth - 10 - (width * slides + margin * (slides - 1));
+					console.log(width);
+
 					set({
 						xy : [
 							local[0],
@@ -49,8 +55,8 @@ export default function Carousel(props) {
 					});
 				}
 			} else {
-				if (local[0] < 960 - (width * slides + margin * (slides - 1))) {
-					local[0] = 960 - (width * slides + margin * (slides - 1));
+				if (local[0] < 1150 - (width * slides + margin * (slides - 1))) {
+					local[0] = 1150 - 25 - (width * slides + margin * (slides - 1));
 					set({
 						xy : [
 							local[0],
@@ -100,10 +106,13 @@ export default function Carousel(props) {
 					-o-user-select: none;
 					user-select: none;
 				}
-				@media (min-width: 960px) {
+				@media (min-width: 1150px) {
 					:global(#flex) {
 						display: flex;
 						justify-content: center;
+					}
+					.carousel-container {
+						overflow: hidden;
 					}
 				}
 			`}</style>
