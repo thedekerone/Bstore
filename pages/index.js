@@ -9,6 +9,7 @@ import ProductView from '../component/ProductView';
 import ProductViewMini from '../component/ProductViewMini';
 import BrandDisplayer from '../component/BrandDisplayer';
 import Selector from '../component/Selector';
+import Filtros from '../component/Filtros';
 export default class index extends Component {
 	render() {
 		return (
@@ -20,6 +21,7 @@ export default class index extends Component {
 				<div className='container'>
 					<BrandDisplayer />
 					<Selector />
+					<Filtros />
 					<Productos />
 				</div>
 

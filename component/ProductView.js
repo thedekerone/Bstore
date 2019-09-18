@@ -53,7 +53,7 @@ export default function Product() {
 						max-width: 500px;
 						width: 100%;
 						margin: 0 auto;
-						font-size: 11px;
+						font-size: 11ñpx;
 
 						padding: 1em;
 						grid-template: auto /1fr 1fr 1fr;
