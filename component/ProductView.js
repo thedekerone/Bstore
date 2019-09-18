@@ -50,11 +50,11 @@ export default function Product() {
 					.product {
 						display: grid;
 						background: white;
-						max-width: 500px;
+						max-width: 400px;
 						width: 100%;
 						margin: 0 auto;
-						font-size: 11ñpx;
-
+						font-size: 11px;
+						box-sizing: border-box;
 						padding: 1em;
 						grid-template: auto /1fr 1fr 1fr;
 					}
