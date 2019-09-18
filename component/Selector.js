@@ -14,9 +14,6 @@ export default function Selector() {
 
 			<div className='filter' />
 			<style jsx>{`
-				.selector {
-					padding: 2em 2em 0 2em;
-				}
 				.drop-bar {
 					display: flex;
 					justify-content: center;

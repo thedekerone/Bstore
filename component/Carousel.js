@@ -18,7 +18,6 @@ export default function Carousel(props) {
 	}));
 
 	const bind = useDrag(({ down, local, velocity, direction }) => {
-		console.log(direction);
 		set({
 			xy : down
 				? [
@@ -42,10 +41,8 @@ export default function Carousel(props) {
 					]
 				});
 			} else if (window.matchMedia('(max-width:950px)').matches) {
-				console.log('da');
 				if (local[0] < window.innerWidth - (width * slides + margin * (slides - 1))) {
 					local[0] = window.innerWidth - 10 - (width * slides + margin * (slides - 1));
-					console.log(width);
 
 					set({
 						xy : [

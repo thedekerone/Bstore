@@ -1,0 +1,39 @@
+{
+  "modules": {
+    "byIdentifier": {},
+    "usedIds": {}
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "static/runtime/main.js": 2,
+      "static\\b90duN-xAYbVg2az-tlCi\\pages\\_app.js": 3,
+      "static\\b90duN-xAYbVg2az-tlCi\\pages\\_error.js": 4,
+      "static\\b90duN-xAYbVg2az-tlCi\\pages\\index.js": 5,
+      "static\\b90duN-xAYbVg2az-tlCi\\pages\\producto.js": 6,
+      "static\\b90duN-xAYbVg2az-tlCi\\pages\\single.js": 7,
+      "static\\wS3vNtz_6Xr1ZkgOgMEHw\\pages\\_app.js": 8,
+      "static\\wS3vNtz_6Xr1ZkgOgMEHw\\pages\\_error.js": 9,
+      "static\\wS3vNtz_6Xr1ZkgOgMEHw\\pages\\index.js": 10,
+      "static\\wS3vNtz_6Xr1ZkgOgMEHw\\pages\\producto.js": 11,
+      "static\\wS3vNtz_6Xr1ZkgOgMEHw\\pages\\single.js": 12,
+      "static\\6Fm09XWHF9WmnyUURrW9o\\pages\\_app.js": 3,
+      "static\\6Fm09XWHF9WmnyUURrW9o\\pages\\_error.js": 4,
+      "static\\6Fm09XWHF9WmnyUURrW9o\\pages\\index.js": 5,
+      "static\\6Fm09XWHF9WmnyUURrW9o\\pages\\producto.js": 6,
+      "static\\6Fm09XWHF9WmnyUURrW9o\\pages\\single.js": 7
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  }
+}

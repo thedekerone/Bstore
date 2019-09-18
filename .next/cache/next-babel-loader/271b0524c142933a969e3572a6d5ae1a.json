@@ -1,0 +1,1 @@
+{"ast":null,"code":"const routes = require('next-routes'); // Name   Page      Pattern\n\n\nmodule.exports = routes() // ----   ----      -----\n.add('/', 'index').add('porducto', 'producto');","map":null,"metadata":{},"sourceType":"script"}

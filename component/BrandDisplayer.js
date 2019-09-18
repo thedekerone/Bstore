@@ -5,37 +5,37 @@ export default function BrandDisplayer() {
 		<div className='brands'>
 			<div className='brand'>
 				<div className='brand__img'>
-					<img src='/static/marcas/gucci.png' width='100%;' alt='' />
+					<img src='static/marcas/gucci.png' width='100%;' alt='' />
 				</div>
 				<h3 className='brand__title'>GUCCI</h3>
 			</div>
 			<div className='brand'>
 				<div className='brand__img'>
-					<img src='/static/marcas/gucci.png' width='100%;' alt='' />
+					<img src='static/marcas/gucci.png' width='100%;' alt='' />
 				</div>
 				<h3 className='brand__title'>GUCCI</h3>
 			</div>
 			<div className='brand'>
 				<div className='brand__img'>
-					<img src='/static/marcas/gucci.png' width='100%;' alt='' />
+					<img src='static/marcas/gucci.png' width='100%;' alt='' />
 				</div>
 				<h3 className='brand__title'>GUCCI</h3>
 			</div>
 			<div className='brand'>
 				<div className='brand__img'>
-					<img src='/static/marcas/gucci.png' width='100%;' alt='' />
+					<img src='static/marcas/gucci.png' width='100%;' alt='' />
 				</div>
 				<h3 className='brand__title'>GUCCI</h3>
 			</div>
 			<div className='brand'>
 				<div className='brand__img'>
-					<img src='/static/marcas/gucci.png' width='100%;' alt='' />
+					<img src='static/marcas/gucci.png' width='100%;' alt='' />
 				</div>
 				<h3 className='brand__title'>GUCCI</h3>
 			</div>
 			<div className='brand'>
 				<div className='brand__img'>
-					<img src='/static/marcas/gucci.png' width='100%;' alt='' />
+					<img src='static/marcas/gucci.png' width='100%;' alt='' />
 				</div>
 				<h3 className='brand__title'>GUCCI</h3>
 			</div>
@@ -46,8 +46,7 @@ export default function BrandDisplayer() {
 						gap: .7em;
 						margin: 0 auto;
 						padding: .4em;
-
-						max-width: 400px;
+						max-width: 550px;
 						grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
 					}
 					.brand {

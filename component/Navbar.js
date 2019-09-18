@@ -1,17 +1,22 @@
 import React from 'react';
+import { Link } from '../routes';
 
 export default function Navbar() {
 	return (
 		<div className='navbar-container'>
 			<div className='navbar'>
 				<div className='main-navbar'>
-					<h1 className='main-navbar__title'>Logo</h1>
+					<Link route='/'>
+						<a>
+							<h1 className='main-navbar__title'>Logo</h1>
+						</a>
+					</Link>
 					<span className='main-navbar__icon'>
 						<div className='categorias'>
 							<p>Categorias</p>{' '}
 						</div>
 
-						<img className='icon-menu' width='30px' src='/static/icons/menu.svg' alt='' />
+						<img className='icon-menu' width='30px' src='static/icons/menu.svg' alt='' />
 					</span>
 				</div>
 				<div className='secondary-navbar'>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Product() {
+export default function Product(props) {
 	return (
 		<div className='product'>
 			<div className='product__img'>
@@ -23,12 +23,16 @@ export default function Product() {
 				</div>
 				{/* info */}
 				<div className='product-information'>
-					<div className='product-information__text'>
-						<p>
-							<b>Descripción:</b> ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-							eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-						</p>
-					</div>
+					{props.wrap ? (
+						<div className='product-information__text'>
+							<p>
+								<b>Descripción:</b> ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+								eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+								vero
+							</p>
+						</div>
+					) : null}
+
 					<div className='product-information__delivery'>
 						<img src='/static/icons/icons8-truck-50.png' width='20px' alt='' />{' '}
 						<span>Envío internacional</span>
@@ -50,7 +54,7 @@ export default function Product() {
 					.product {
 						display: grid;
 						background: white;
-						max-width: 400px;
+						max-width: ${props.wrap ? '1000px' : '400px'};
 						width: 100%;
 						margin: 0 auto;
 						font-size: 11px;
@@ -60,7 +64,7 @@ export default function Product() {
 					}
 					.product__img {
 						grid-row: 1/2;
-						padding: .9em;
+						padding: ${props.wrap ? '0' : '.9em'};
 						box-sizing: border-box;
 					}
 					.product-title h3 {
@@ -73,7 +77,7 @@ export default function Product() {
 						width: 100%;
 					}
 					.product__description {
-						padding-left: 1.2em;
+						padding-left: ${props.wrap ? '7em' : '1.2em'};
 						grid-column: 2/4;
 						grid-row: 1/3;
 						box-sizing: border-box;
@@ -102,9 +106,7 @@ export default function Product() {
 						font-size: 1.rem;
 						color: black;
 					}
-					.product-information__text {
-						display: none;
-					}
+
 					.product-information__delivery {
 						padding: 1.5em 0 .8em 0;
 					}
@@ -117,27 +119,31 @@ export default function Product() {
 						margin-left: 1rem;
 						height: 20px;
 					}
+
 					@media (min-width: 660px) {
 						.product {
-							border: 1px solid #d5d5d5;
+							border: ${props.wrap ? ' 0px' : '1px solid #d5d5d5'};
 							font-size: 15px;
 						}
-						// .product {
-						// 	max-width: 900px;
-						// 	margin: 0 auto;
-						// }
-						// .product__img {
-						// 	padding: 1rem;
-						// }
-						// .product__description {
-						// 	padding-left: 7rem;
-						// }
-						// .product-information__text {
-						// 	display: block;
-						// }
 					}
+					// .product {
+					// 	max-width: 900px;
+					// 	margin: 0 auto;
+					// }
+					// .product__img {
+					// 	padding: 1rem;
+					// }
+					// .product__description {
+					// 	padding-left: 7rem;
+					// }
+					// .product-information__text {
+					// 	display: block;
+					// }
 				`}
 			</style>
+			{`
+						
+					`}
 		</div>
 	);
 }

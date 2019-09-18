@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from '../routes';
 
 export default function ProductViewMini() {
 	return (
 		<div className='product'>
 			<div className='product__img'>
-				<img src='/static/gucci.jpeg' width='100%' alt='' />
+				<img src='static/gucci.jpeg' width='100%' alt='' />
 			</div>
 			<div className='product__description'>
 				<div className='product-title'>

@@ -4,11 +4,11 @@ export default function Filtros() {
 	return (
 		<div className='filtros'>
 			<div className='filtro'>
-				<img src='/static/icons/icons8-filter-50.png' width='20px' alt='' /> <span>Filtros</span>
+				<img src='static/icons/icons8-filter-50.png' width='20px' alt='' /> <span>Filtros</span>
 			</div>
 
 			<div className='vista'>
-				<img src='/static/icons/icons8-view-stream-50.png' width='20px' alt='' /> <span>Filtros</span>
+				<img src='static/icons/icons8-view-stream-50.png' width='20px' alt='' /> <span>Filtros</span>
 			</div>
 			<style jsx>{`
 				.filtros {
